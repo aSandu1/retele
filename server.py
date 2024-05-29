@@ -102,4 +102,4 @@ if __name__ == '__main__':
     resources['1'] = Resource('1', 'Conference Room')
     resources['2'] = Resource('2', 'Projector')
 
-    socketio.run(app, host='0.0.0.0', port=5000)
+    socketio.run(app, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
